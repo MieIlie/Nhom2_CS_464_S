@@ -1,0 +1,73 @@
+﻿<Window x:Class="QLyTiemSach.Sach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QLyTiemSach"
+        mc:Ignorable="d"
+        Title="Sach" Height="450" Width="800">
+    <Grid Margin="10" Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Form nhập sách -->
+        <GroupBox Header="Thông tin Sách" FontWeight="Bold" Padding="10" Grid.Row="0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Mã Sách:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtMaSach" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+                <TextBlock Text="Tên Sách:" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTenSach" Grid.Row="0" Grid.Column="3" Margin="5"/>
+
+                <TextBlock Text="Tác Giả:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTacGia" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+                <TextBlock Text="Thể Loại:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTheLoai" Grid.Row="1" Grid.Column="3" Margin="5"/>
+
+                <TextBlock Text="Giá Bán:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtGiaBan" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+                <TextBlock Text="Số Lượng:" Grid.Row="2" Grid.Column="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtSoLuong" Grid.Row="2" Grid.Column="3" Margin="5"/>
+            </Grid>
+        </GroupBox>
+
+        <!-- Danh sách sách -->
+        <DataGrid x:Name="dgSach" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="0 10 0 10" Height="250" SelectionChanged="dgSach_SelectionChanged" Background="AliceBlue">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã Sách" Binding="{Binding MaSach}" Width="*"/>
+                <DataGridTextColumn Header="Tên Sách" Binding="{Binding TenSach}" Width="2*"/>
+                <DataGridTextColumn Header="Tác Giả" Binding="{Binding TacGia}" Width="*"/>
+                <DataGridTextColumn Header="Thể Loại" Binding="{Binding TheLoai}" Width="*"/>
+                <DataGridTextColumn Header="Giá Bán" Binding="{Binding GiaBan}" Width="*"/>
+                <DataGridTextColumn Header="Số Lượng" Binding="{Binding SoLuong}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Nút thao tác -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+            <Button Content="Thêm" Width="100" Margin="10" Click="BtnThem_Click" Background="LightGoldenrodYellow"/>
+            <Button Content="Sửa" Width="100" Margin="10" Click="BtnSua_Click" Background="LightGoldenrodYellow"/>
+            <Button Content="Xóa" Width="100" Margin="10 10 10 10.2" Click="BtnXoa_Click" Background="LightGoldenrodYellow"/>
+            <Button Content="Làm mới" Width="100" Margin="10" Click="BtnRefresh_Click" Background="LightGoldenrodYellow"/>
+            <Button Content="Clear Form" Width="100" Margin="10 10 10 10.2" Click="BtnClear_Click" Background="LightGoldenrodYellow"/>
+            <Button Content="Tìm Kiếm" Width="100" Margin="10 10 10 10.2" Click="BtnTim_Click" Background="LightGoldenrodYellow"/>
+        </StackPanel>
+    </Grid>
+</Window>
