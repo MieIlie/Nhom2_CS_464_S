@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f73c4ed54b7443a08ae24f4b646df1e2" Name="Diagram1">
+        <EntityTypeShape EntityType="QLyTiemSachModel.CHITIETHOADON" Width="1.5" PointX="5.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLyTiemSachModel.HOADON" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLyTiemSachModel.KHACHHANG" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLyTiemSachModel.SACH" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="QLyTiemSachModel.FK_CTHD_HD" ManuallyRouted="false" />
+        <AssociationConnector Association="QLyTiemSachModel.FK_CTHD_SACH" ManuallyRouted="false" />
+        <AssociationConnector Association="QLyTiemSachModel.FK_HOADON_KH" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
