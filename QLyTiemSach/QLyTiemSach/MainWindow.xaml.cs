@@ -23,6 +23,7 @@ namespace QLyTiemSach
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
