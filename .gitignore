@@ -23,10 +23,8 @@ packages/
 *.nuget.targets
 
 ## === Database files ===
-*.mdf
-*.ldf
-*.ndf
-*.bak
+
+
 
 ## === Auto-generated ===
 *.aps
