@@ -26,6 +26,7 @@ namespace QLyTiemSach
 
         }
 
+
         private void BtnSach_Click(object sender, RoutedEventArgs e)
         {
             Sach sach = new Sach();
@@ -46,5 +47,6 @@ namespace QLyTiemSach
         {
 
         }
+
     }
 }
