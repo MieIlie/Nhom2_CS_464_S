@@ -1,0 +1,58 @@
+## === Build artifacts ===
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+TestResults/
+out/
+publish/
+
+## === Visual Studio 2017 cache & user settings ===
+.vs/
+*.user
+*.suo
+*.userosscache
+*.userprefs
+
+## === NuGet ===
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+*.nuget.props
+*.nuget.targets
+
+## === Database files ===
+*.mdf
+*.ldf
+*.ndf
+*.bak
+
+## === Auto-generated ===
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.dbmdl
+
+## === Build outputs ===
+*.exe
+*.dll
+*.pdb
+*.mdb
+
+## === Logs & backups ===
+*.log
+*.bak
+*.backup
+
+## === Rider / Resharper ===
+_ReSharper*/
+*.DotSettings.user
+
+## === Publish settings ===
+*.Publish.xml
+*.pubxml
+*.pubxml.user
