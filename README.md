@@ -1,2 +1,2 @@
 # Nhom2_CS_464_S
-Bài thực hành môn cs464
+Bài thực hành đồ án nhóm môn cs464
