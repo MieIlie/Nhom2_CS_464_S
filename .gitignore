@@ -63,3 +63,5 @@ _ReSharper*/
 *.Publish.xml
 *.pubxml
 *.pubxml.user
+QLyTiemSach/QLyTiemSach/*.mdf
+QLyTiemSach/QLyTiemSach/*.ldf
