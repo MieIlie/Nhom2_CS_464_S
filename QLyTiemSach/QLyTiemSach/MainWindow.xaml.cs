@@ -47,7 +47,7 @@ namespace QLyTiemSach
 
         private void BtnHoaDon_Click(object sender, RoutedEventArgs e)
         {
-
+            throw new NotImplementedException();
         }
 
     }
