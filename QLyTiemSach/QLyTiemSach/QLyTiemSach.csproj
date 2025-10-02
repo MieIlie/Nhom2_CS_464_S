@@ -88,6 +88,9 @@
     <Compile Include="KHACHHANG.cs">
       <DependentUpon>QlyTiemSachModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="KhachHang.xaml.cs">
+      <DependentUpon>KhachHang.xaml</DependentUpon>
+    </Compile>
     <Compile Include="QlyTiemSachModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -106,6 +109,16 @@
     <Compile Include="SACH.cs">
       <DependentUpon>QlyTiemSachModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Sach.xaml.cs">
+      <DependentUpon>Sach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchSach.xaml.cs">
+      <DependentUpon>SearchSach.xaml</DependentUpon>
+    </Compile>
+    <Page Include="KhachHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -118,6 +131,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Sach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchSach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

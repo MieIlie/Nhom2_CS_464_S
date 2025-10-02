@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 # Nhom2_CS_464_S
-Bài thực hành môn cs464
-=======
 # Nhom2_CS_464_S — Ứng dụng Quản lý Tiệm Sách (WPF + Entity Framework)
 
 ## ✅ Giới thiệu
@@ -84,4 +81,5 @@ Nhom2_CS_464_S/
 - File database `.mdf` / `.ldf` **không nên commit lên repo**, dễ gây conflict  
 - Dùng `git stash` hoặc `git commit` trước khi chuyển branch nếu có thay đổi chưa commit  
 - Tránh để các file `obj/` hoặc file build bị track vào git  
->>>>>>> Stashed changes
+
+Bài thực hành đồ án nhóm môn cs464

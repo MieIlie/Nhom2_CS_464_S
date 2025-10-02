@@ -7,6 +7,15 @@ TestResults/
 out/
 publish/
 
+# Ignore Visual Studio temp files
+.vs/
+
+*.ide
+*.db.lock
+*.ide-shm
+*.ide-wal
+
+
 ## === Visual Studio 2017 cache & user settings ===
 .vs/
 *.user
@@ -54,3 +63,5 @@ _ReSharper*/
 *.Publish.xml
 *.pubxml
 *.pubxml.user
+QLyTiemSach/QLyTiemSach/*.mdf
+QLyTiemSach/QLyTiemSach/*.ldf

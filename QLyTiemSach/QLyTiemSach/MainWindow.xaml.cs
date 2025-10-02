@@ -25,5 +25,30 @@ namespace QLyTiemSach
             InitializeComponent();
 
         }
+
+
+        private void BtnSach_Click(object sender, RoutedEventArgs e)
+        {
+            Sach sach = new Sach();
+            sach.Show();
+        }
+
+        private void BtnThoat_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void BtnKhachHang_Click(object sender, RoutedEventArgs e)
+        {
+            KhachHang kh = new KhachHang();
+            kh.Show();
+            this.Close();
+        }
+
+        private void BtnHoaDon_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
