@@ -5,8 +5,235 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QLyTiemSach"
         mc:Ignorable="d"
+<<<<<<< Updated upstream
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         
     </Grid>
+=======
+
+        Title="Hệ Thống Quản Lý Nhà Sách" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="LightBlue" Offset="0.0"/>
+            <GradientStop Color="CadetBlue" Offset="1.0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <DockPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+
+            <!-- Trái -->
+            <StackPanel Background="Blue" Grid.RowSpan="2" Grid.Column="0">
+                <TextBlock Text="BOOKSTORE" Foreground="White" FontSize="20" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"/>
+                <Button Content="Quản lý Sách" Margin="10" Height="40" Click="BtnSach_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#4facfe" Offset="0.0"/>
+                                        <GradientStop Color="#00f2fe" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="8" Padding="6">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <!-- Hiệu ứng hover -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#43e97b" Offset="0.0"/>
+                                                <GradientStop Color="#38f9d7" Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                
+                <Button Content="Quản lý Khách hàng" Margin="10" Height="40" Click="BtnKhachHang_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#4facfe" Offset="0.0"/>
+                                        <GradientStop Color="#00f2fe" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="8" Padding="6">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <!-- Hiệu ứng hover -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#43e97b" Offset="0.0"/>
+                                                <GradientStop Color="#38f9d7" Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                
+                <Button Content="Quản lý Hóa đơn" Margin="10" Height="40" Click="BtnHoaDon_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#4facfe" Offset="0.0"/>
+                                        <GradientStop Color="#00f2fe" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="8" Padding="6">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <!-- Hiệu ứng hover -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#43e97b" Offset="0.0"/>
+                                                <GradientStop Color="#38f9d7" Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                
+                <Button Content="Thoát" Margin="10" Height="40" Click="BtnThoat_Click">
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#4facfe" Offset="0.0"/>
+                                        <GradientStop Color="#00f2fe" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="{TemplateBinding Background}" 
+                                CornerRadius="8" Padding="6">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+
+                            <!-- Hiệu ứng hover -->
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="RenderTransform">
+                                        <Setter.Value>
+                                            <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                                <GradientStop Color="#43e97b" Offset="0.0"/>
+                                                <GradientStop Color="#38f9d7" Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </StackPanel>
+
+            <!-- Phải -->
+            <Grid Grid.Column="1" Grid.Row="0">
+                <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock Text="HỆ THỐNG QUẢN LÝ NHÀ SÁCH" FontSize="24" FontWeight="Bold" Foreground="#34495E" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Xin chào!" FontSize="16" Margin="0 20 0 0" Foreground="Gray"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- Status Bar -->
+            <DockPanel Grid.Row="1" Grid.Column="1" Background="#BDC3C7">
+                <TextBlock Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='dd/MM/yyyy HH:mm'}"
+                       xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                       VerticalAlignment="Center" Margin="10 0"/>
+                <TextBlock Text="  |  Người dùng: admin" VerticalAlignment="Center"/>
+            </DockPanel>
+        </Grid>
+    </DockPanel>
+>>>>>>> Stashed changes
 </Window>
