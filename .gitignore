@@ -9,7 +9,7 @@ publish/
 
 # Ignore Visual Studio temp files
 .vs/
-*.suo
+
 *.ide
 *.db.lock
 *.ide-shm
