@@ -25,7 +25,6 @@ C:\GOC_HOC\code_hoc\cs462\test\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\
 C:\GOC_HOC\code_hoc\cs462\test\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.csproj.CopyComplete
 C:\GOC_HOC\code_hoc\cs462\test\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.exe
 C:\GOC_HOC\code_hoc\cs462\test\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.pdb
-<<<<<<< HEAD
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\bin\Debug\QLyTiemSach.mdf
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\bin\Debug\QLyTiemSach_log.ldf
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\bin\Debug\QLyTiemSach.exe.config
@@ -55,5 +54,3 @@ C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.csproj.CoreCo
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.csproj.CopyComplete
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.exe
 C:\Me\Nhom2_CS_464_S\QLyTiemSach\QLyTiemSach\obj\Debug\QLyTiemSach.pdb
-=======
->>>>>>> 492309cc3918069ee8ed06e47f93e002de0da486
